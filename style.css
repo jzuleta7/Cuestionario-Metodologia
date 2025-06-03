@@ -1,0 +1,31 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.answer-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.answer-btn:hover:not([disabled]) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.correct {
+    background-color: #22c55e !important; /* green-500 */
+    color: white !important;
+    border-color: #16a34a !important; /* green-600 */
+}
+
+.incorrect {
+    background-color: #ef4444 !important; /* red-500 */
+    color: white !important;
+    border-color: #dc2626 !important; /* red-600 */
+}
+
+.disabled-incorrect { /* Estilo para botones incorrectos deshabilitados pero que no fueron la última selección */
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Puedes añadir más estilos personalizados aquí si es necesario */
